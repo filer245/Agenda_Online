@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "907659565674",
+    "project_id": "agenda-app-30827",
+    "storage_bucket": "agenda-app-30827.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907659565674:android:e0929bf1c22af8d6508813",
+        "android_client_info": {
+          "package_name": "com.sergio.agendaonline"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGDP1MoNmjW3wCZb0sbiwz9H_iKvg-0qQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

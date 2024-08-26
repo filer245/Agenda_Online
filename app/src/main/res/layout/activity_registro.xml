@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro">
+    
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/CrearCuentaTxt"
+            android:fontFamily="@font/worksans"
+            android:textSize="25sp"
+            android:gravity="center"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:lottie_imageAssetsFolder="assets"
+            app:lottie_fileName="registro.json"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:id="@+id/NombreEt"
+                android:hint="@string/NombreEt"
+                android:inputType="textPersonName|textCapWords"
+                android:fontFamily="@font/worksans"
+                android:padding="20dp"
+                android:drawableStart="@drawable/ic_person"
+                android:drawablePadding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/CorreoET"
+                android:hint="@string/CorreoEt"
+                android:inputType="textEmailAddress"
+                android:fontFamily="@font/worksans"
+                android:padding="20dp"
+                android:drawableStart="@drawable/ic_mail"
+                android:drawablePadding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:passwordToggleEnabled="true"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/ContraseñaEt"
+                android:hint="@string/ContraseñaEt"
+                android:inputType="textPassword"
+                android:fontFamily="@font/worksans"
+                android:padding="20dp"
+                android:drawableStart="@drawable/ic_password"
+                android:drawablePadding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:passwordToggleEnabled="true"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/ConfirmarContraseñaEt"
+                android:hint="@string/ConfirmarContraseñaEt"
+                android:inputType="textPassword"
+                android:fontFamily="@font/worksans"
+                android:padding="20dp"
+                android:drawableStart="@drawable/ic_password"
+                android:drawablePadding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/RegistrarUsuario"
+            android:text="@string/RegistrarUsusario"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/worksans"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/TengoUnaCuentaTXT"
+            android:text="@string/TengoUnaCuenta"
+            android:fontFamily="@font/worksans"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</ScrollView>
