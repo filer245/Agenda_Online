@@ -10,4 +10,5 @@
     <color name="colorPrimary">#3949ab</color>
     <color name="colorPrimaryDark">#00227b</color>
     <color name="colorPrimaryLight">#6f74dd</color>
+    <color name="red">#DC0000</color>
 </resources>

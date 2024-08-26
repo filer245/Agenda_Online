@@ -17,7 +17,7 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="120dp"
+            android:layout_height="wrap_content"
             app:cardBackgroundColor="@color/colorPrimaryLight"
             app:cardUseCompatPadding="true"
             android:padding="0.2dp"
@@ -26,43 +26,43 @@
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="10dp">
 
                 <TextView
-                    android:text="@string/BienvenidoPrincipal"
-                    android:fontFamily="@font/worksans"
-                    android:textColor="#fff"
-                    android:textSize="20sp"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/worksans"
+                    android:text="@string/BienvenidoPrincipal"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
 
                 <ProgressBar
                     android:id="@+id/ProgressBarDatos"
-                    android:layout_marginTop="10dp"
-                    android:layout_gravity="center"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp" />
 
                 <TextView
                     android:id="@+id/NombresPrincipal"
-                    android:text="@string/NombresPrincipal"
-                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:fontFamily="@font/worksans"
+                    android:text="@string/NombresPrincipal"
                     android:textColor="#fff"
                     android:textSize="20sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:visibility="gone" />
 
                 <TextView
                     android:id="@+id/CorreoPrincipal"
-                    android:text="@string/CorreoPrincipal"
-                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:fontFamily="@font/worksans"
+                    android:text="@string/CorreoPrincipal"
                     android:textColor="#fff"
                     android:textSize="20sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:visibility="gone" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -72,10 +72,23 @@
         <Button
             android:id="@+id/CerrarSesion"
             android:text="@string/CerrarSesion"
+            android:visibility="gone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
+        <Button
+            android:id="@+id/BorrarCuenta"
+            android:visibility="gone"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red"
+            android:text="@string/BorrarCuenta" />
+
+
 
     </androidx.appcompat.widget.LinearLayoutCompat>
+
+
 
 </ScrollView>

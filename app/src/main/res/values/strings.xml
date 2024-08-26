@@ -16,6 +16,7 @@
 
     <!-- ACTIVIDAD REGISTRO -->
     <string name="CerrarSesion">Salir</string>
+    <string name="BorrarCuenta">Borrar Cuenta</string>
 
     <!-- ACTIVIDAD LOGIN -->
     <string name="IniciarSesionTXT">Iniciar Sesión</string>
